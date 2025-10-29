@@ -432,6 +432,15 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d3fd119d74b830634cea2a0f58bbd0d54540518a14397557951e79340abc28c0"
 
 [[package]]
+name = "compiler_builtins"
+version = "0.1.160"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6376049cfa92c0aa8b9ac95fae22184b981c658208d4ed8a1dc553cd83612895"
+dependencies = [
+ "rustc-std-workspace-core",
+]
+
+[[package]]
 name = "core-error"
 version = "0.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -510,6 +519,16 @@ checksum = "bfe33edd8e85a12a67454e37f8c75e730830d83e313556ab9ebf9ee7fbeb3bfb"
 dependencies = [
  "crc32fast",
  "miniz_oxide 0.8.9",
+]
+
+[[package]]
+name = "fortanix-sgx-abi"
+version = "0.5.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "57cafc2274c10fab234f176b25903ce17e690fca7597090d50880e047a0389c5"
+dependencies = [
+ "compiler_builtins",
+ "rustc-std-workspace-core",
 ]
 
 [[package]]
@@ -1227,6 +1246,7 @@ dependencies = [
  "aya-log-ebpf",
  "cfg-if",
  "dlmalloc",
+ "fortanix-sgx-abi",
  "hashbrown 0.15.4",
  "hermit-abi 0.5.2",
  "libc",
