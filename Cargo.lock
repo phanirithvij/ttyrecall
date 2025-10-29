@@ -447,6 +447,18 @@ dependencies = [
 ]
 
 [[package]]
+name = "dlmalloc"
+version = "0.2.9"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d01597dde41c0b9da50d5f8c219023d63d8f27f39a27095070fd191fddc83891"
+dependencies = [
+ "cfg-if",
+ "libc",
+ "rustc-std-workspace-core",
+ "windows-sys 0.59.0",
+]
+
+[[package]]
 name = "either"
 version = "1.13.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1166,6 +1178,7 @@ dependencies = [
  "aya-ebpf",
  "aya-log-ebpf",
  "cfg-if",
+ "dlmalloc",
  "hashbrown 0.15.4",
  "object 0.37.1",
  "rustc-demangle",
