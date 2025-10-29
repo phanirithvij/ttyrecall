@@ -787,9 +787,12 @@ checksum = "7a66a03ae7c801facd77a29370b4faec201768915ac14a721ba36f20bc9c209b"
 
 [[package]]
 name = "rustc-demangle"
-version = "0.1.24"
+version = "0.1.25"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "719b953e2095829ee67db738b3bfa9fa368c94900df327b3f07fe6e794d2fe1f"
+checksum = "989e6739f80c4ad5b13e0fd7fe89531180375b18520cc8c82080e4dc4035b84f"
+dependencies = [
+ "rustc-std-workspace-core",
+]
 
 [[package]]
 name = "rustc-literal-escaper"
@@ -1103,6 +1106,7 @@ dependencies = [
  "aya-log-ebpf",
  "cfg-if",
  "hashbrown 0.15.4",
+ "rustc-demangle",
  "rustc-literal-escaper",
  "ttyrecall-common",
 ]
