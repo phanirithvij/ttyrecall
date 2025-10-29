@@ -29,6 +29,9 @@ hermit-abi = { version = "=0.5.2", features = [
 ], public = true }
 r-efi = { version = "=5.3.0", features = ['rustc-dep-of-std'] }
 r-efi-alloc = { version = "=2.1.0", features = ['rustc-dep-of-std'] }
+wasi = { version = "=0.11.1+wasi-snapshot-preview1", features = [
+    'rustc-dep-of-std',
+], default-features = false }
 
 [[bin]]
 name = "ttyrecall"
