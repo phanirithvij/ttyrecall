@@ -19,6 +19,9 @@ hashbrown = { version = "=0.15.4", default-features = false, features = [
 rustc-demangle = { version = "=0.1.25", features = ['rustc-dep-of-std'] }
 object = "=0.37.1"
 dlmalloc = { version = "=0.2.9", features = ['rustc-dep-of-std'] }
+libc = { version = "=0.2.174", default-features = false, features = [
+    'rustc-dep-of-std',
+], public = true }
 
 [[bin]]
 name = "ttyrecall"
