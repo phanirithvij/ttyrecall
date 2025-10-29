@@ -13,6 +13,9 @@ rustc-literal-escaper = { version = "0.0.2", features = ["rustc-dep-of-std"] } #
 
 # For build-std=core, for std inside rust-src
 cfg-if = "=1.0.1"
+hashbrown = { version = "=0.15.4", default-features = false, features = [
+    'rustc-dep-of-std',
+] }
 
 [[bin]]
 name = "ttyrecall"
