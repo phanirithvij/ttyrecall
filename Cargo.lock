@@ -843,6 +843,25 @@ dependencies = [
 ]
 
 [[package]]
+name = "r-efi"
+version = "5.3.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "69cdb34c158ceb288df11e18b4bd39de994f6657d83847bdffdbd7f346754b0f"
+dependencies = [
+ "rustc-std-workspace-core",
+]
+
+[[package]]
+name = "r-efi-alloc"
+version = "2.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "dc2f58ef3ca9bb0f9c44d9aa8537601bcd3df94cc9314a40178cadf7d4466354"
+dependencies = [
+ "r-efi",
+ "rustc-std-workspace-core",
+]
+
+[[package]]
 name = "regex"
 version = "1.10.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1213,6 +1232,8 @@ dependencies = [
  "libc",
  "miniz_oxide 0.8.9",
  "object 0.37.1",
+ "r-efi",
+ "r-efi-alloc",
  "rustc-demangle",
  "rustc-literal-escaper",
  "ttyrecall-common",
