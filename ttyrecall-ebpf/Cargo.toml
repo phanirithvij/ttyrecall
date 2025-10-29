@@ -8,6 +8,7 @@ license = "GPL-2.0-or-later"
 aya-ebpf = "0.1.0"
 aya-log-ebpf = "0.1.0"
 ttyrecall-common = { path = "../ttyrecall-common" }
+rustc-literal-escaper = { version = "0.0.2", features = ["rustc-dep-of-std"] } # For build-std=core, for proc_macro inside rust-src
 
 [[bin]]
 name = "ttyrecall"
